@@ -1,71 +1,55 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0D1117,100:58A6FF&height=180&section=header&text=Jiyu%20Li&fontSize=44&fontColor=E6EDF3&desc=OT%20%C3%97%20Cloud%20%C3%97%20AI&descAlignY=64&descSize=18" />
+  <img src="[https://capsule-render.vercel.app/api?type=waving&color=0:1b2a47,100:2b6cb0&height=180&section=header&text=Jiyu%20Li&fontSize=42&fontColor=ffffff&desc=OT%20%C3%97%20Cloud%20%C3%97%20AI&descAlignY=65&descSize=18](https://capsule-render.vercel.app/api?type=waving&color=0:1b2a47,100:2b6cb0&height=180&section=header&text=Jiyu%20Li&fontSize=42&fontColor=ffffff&desc=OT%20%C3%97%20Cloud%20%C3%97%20AI&descAlignY=65&descSize=18)" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=20&pause=1200&color=58A6FF&center=true&vCenter=true&width=640&lines=Natural+language+%E2%86%92+validated+IEC+61131-3;Cloud-native+microservices+%26+LLM+agent+pipelines;Measure+first.+Verify+before+shipping." />
+  <img src="[https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&color=0969DA&center=true&vCenter=true&width=600&lines=Natural+language+%E2%86%92+validated+IEC+61131-3;Cloud-native+microservices+%26+LLM+agents;Measure+first.+Verify+before+shipping](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1500&color=0969DA&center=true&vCenter=true&width=600&lines=Natural+language+%E2%86%92+validated+IEC+61131-3;Cloud-native+microservices+%26+LLM+agents;Measure+first.+Verify+before+shipping)." />
 </p>
 
----
-
-```console
+```bash
 $ whoami
-Jiyu Li — systems that cross OT / cloud / AI
+Jiyu Li — Systems crossing OT, Cloud & AI
 
 $ cat focus.txt
-Seven years of industrial automation (PLC, HMI, LV–MV–HV drives, commissioning),
-now building cloud-native services and LLM agent pipelines.
-I work on the layer between them: natural language in, validated engineering artefacts out.
+7 years in industrial automation (PLC, HMI, MV/HV drives, commissioning).
+Currently building cloud-native backends and LLM agent pipelines.
+Core focus: Translating natural-language intent into validated engineering systems.
 ```
 
 ### Architecture & Agentic Systems
 
-**AutoPLC-Agent** — natural language to validated IEC 61131-3 / PLCopen TC6 XML (MIT)
-
+* **AutoPLC-Agent** — Natural language to validated IEC 61131-3 / PLCopen TC6 XML.
 ```text
-requirements (NL)
+Requirements (NL)
    └─ req_parser ──▶ SystemRequirement JSON
         └─ gherkin_gen ──▶ .feature scenarios
              └─ ast_gen A/B/C ──▶ PLC_AST
-                  └─ st_gen | ld_ir_gen  (deterministic · LLM-direct · hybrid)
-                       └─ plcopen_xml_exporter ──▶ PLCopen TC6 XML 2.01
-                            └─ GATES: Tier-1 schema/grounding + Tier-2 semantic review
-                                      + MATIEC iec2c compile + OpenPLC v3 simulation
+                  └─ st_gen | ld_ir_gen (deterministic · LLM-direct · hybrid)
+                       └─ plcopen_xml_exporter ──▶ PLCopen TC6 XML
+                            └─ GATES: AST Syntax + MATIEC Compile + OpenPLC Simulation
 ```
 
-**Eattoday-Architecture-Spec** — polyglot microservices platform specification
-(Python/FastAPI · Spring Boot · API gateway & edge security · Stripe · multi-cloud)
-
-**Twin OS** — spec-first agent framework: frozen capability matrix as the fact source,
-deterministic gates, fail-closed pipelines (framework spec public, no personal data)
+* **Eattoday-Architecture-Spec** — Polyglot microservices platform specification (Python/FastAPI, Spring Boot, API gateway, Stripe, multi-cloud deployment). *(Spec public / Source private)*
+* **Twin OS** — Spec-first deterministic agent runtime framework.
 
 ### Research
 
-**Edge monocular depth estimation** — CNN (MiDaS) vs transformer (Depth Anything) under edge
-constraints; ONNX optimisation, 19.4 FPS on constrained hardware
+* **Edge Monocular Depth Estimation** — Benchmarking CNN (MiDaS) vs Transformer (Depth Anything) under edge compute constraints; ONNX runtime optimization (19.4 FPS).
 
-### Stack
+### Tech Stack
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=python,fastapi,spring,docker,kubernetes,ts,nextjs,react,pytorch,git&theme=dark" />
-</p>
+```text
+Backend:     Python (FastAPI, Pydantic), Java (Spring Boot), TypeScript, Node.js
+Industrial:  Siemens TIA Portal (S7-1500 LAD/ST), IEC 61131-3, PLCopen XML, MV/HV VFDs
+Data & AI:   LLM Agents, RAG (LangChain, LlamaIndex), PyTorch, ONNX, PostgreSQL, Redis
+Cloud & Ops: Docker, Kubernetes, Google Cloud Run, AWS EC2, GitHub Actions, CI/CD
+```
 
-<p align="center">
-  <img src="https://img.shields.io/badge/IEC%2061131--3-ST%20%7C%20LD-0A66C2?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/PLCopen-TC6%20XML-0A66C2?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Siemens-TIA%20Portal-009999?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Stripe-payments-635BFF?style=for-the-badge&logo=stripe&logoColor=white" />
-</p>
+<br/>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=JreeyL&theme=github-dark-blue&hide_border=true&background=0D1117" height="150" />
-</p>
-
----
-
-<p align="center">
-  <a href="https://jiyu-automation-portfolio.vercel.app/">Portfolio</a> ·
-  <a href="https://linkedin.com/in/jiyu-li-software">LinkedIn</a> ·
-  <a href="https://github.com/JreeyL/AutoPLC-Agent">AutoPLC-Agent</a> ·
-  <a href="mailto:jreeylee92@outlook.com">jreeylee92@outlook.com</a>
+  <a href="[https://jiyu-automation-portfolio.vercel.app/](https://jiyu-automation-portfolio.vercel.app/)"><b>Portfolio</b></a> ·
+  <a href="[https://linkedin.com/in/jiyu-li-software](https://linkedin.com/in/jiyu-li-software)"><b>LinkedIn</b></a> ·
+  <a href="[https://github.com/JreeyL/AutoPLC-Agent](https://github.com/JreeyL/AutoPLC-Agent)"><b>AutoPLC-Agent</b></a> ·
+  <a href="mailto:jreeylee92@outlook.com"><b>Email</b></a>
 </p>
